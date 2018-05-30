@@ -1,0 +1,11 @@
+C:\Users\caio\Desktop\Exercicios Iniciais\bin\Debug\netcoreapp2.0\Exercicios Iniciais.deps.json
+C:\Users\caio\Desktop\Exercicios Iniciais\bin\Debug\netcoreapp2.0\Exercicios Iniciais.runtimeconfig.json
+C:\Users\caio\Desktop\Exercicios Iniciais\bin\Debug\netcoreapp2.0\Exercicios Iniciais.runtimeconfig.dev.json
+C:\Users\caio\Desktop\Exercicios Iniciais\bin\Debug\netcoreapp2.0\Exercicios Iniciais.dll
+C:\Users\caio\Desktop\Exercicios Iniciais\bin\Debug\netcoreapp2.0\Exercicios Iniciais.pdb
+C:\Users\caio\Desktop\Exercicios Iniciais\obj\Debug\netcoreapp2.0\Exercicios Iniciais.csprojAssemblyReference.cache
+C:\Users\caio\Desktop\Exercicios Iniciais\obj\Debug\netcoreapp2.0\Exercicios Iniciais.csproj.CoreCompileInputs.cache
+C:\Users\caio\Desktop\Exercicios Iniciais\obj\Debug\netcoreapp2.0\Exercicios Iniciais.AssemblyInfoInputs.cache
+C:\Users\caio\Desktop\Exercicios Iniciais\obj\Debug\netcoreapp2.0\Exercicios Iniciais.AssemblyInfo.cs
+C:\Users\caio\Desktop\Exercicios Iniciais\obj\Debug\netcoreapp2.0\Exercicios Iniciais.dll
+C:\Users\caio\Desktop\Exercicios Iniciais\obj\Debug\netcoreapp2.0\Exercicios Iniciais.pdb
