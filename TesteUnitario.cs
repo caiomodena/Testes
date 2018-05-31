@@ -4,21 +4,24 @@ using Xunit;
 namespace Exercicios_Iniciais
 {
     public class TesteUnitario
-    {
+    {                
         [Fact]
-        public void PassandoTeste()
+        public void VerificarAumentoNegativo()
         {
-            Assert.Equal(4, Add(2, 2));
+            Salario sal = new Salario(5000);
+            double salarioFinal;            
+            salarioFinal = sal.salario;
+            //Assert.ThrowsAny(sal.calculaNovoSalarioPorPercentual(-5));
         }
-        
+
         [Fact]
-        public void FailingTest()
-        {
-            Assert.Equal(5, Add(2, 2));
-        }
-        int Add(int x, int y)
-        {
-            return x + y;
-        }
+        public void VerificarSoma()
+        {            
+            Calculadora calc = new Calculadora();
+            calc.adicionaNumero(4);
+            calc.adicionaNumero(6);
+            calc.somaNumerosLista();
+            Assert.Equal(10,calc.valorSoma);
+        }        
     }
 }

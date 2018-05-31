@@ -1,6 +1,6 @@
 using System;
 
-public class Salario
+class Salario
 {
     public double salario {get; set;}
 
