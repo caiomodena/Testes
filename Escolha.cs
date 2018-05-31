@@ -46,7 +46,7 @@ namespace Exercicios_Iniciais
                             Console.WriteLine("Digite seu salário atual: ");
                             Salario salario = new Salario(Double.Parse(Console.ReadLine()));
                             Console.WriteLine("Digite o percentual de aumento: ");
-                            salario.calculaNovoSalarioPorPercentual(double.Parse(Console.ReadLine()));
+                            salario.calculaNovoSalarioPorPercentual(Double.Parse(Console.ReadLine()));
                             Console.WriteLine("Seu novo salário será de: {0}",salario.salario.ToString());
                             break;
                     default: Console.WriteLine("vamos almoçar");
