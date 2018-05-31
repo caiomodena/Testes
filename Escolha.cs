@@ -14,6 +14,7 @@ namespace Exercicios_Iniciais
             Console.WriteLine("Escolha a funcionalidade desejada.");
             Console.WriteLine("1 - Calculadora");
             Console.WriteLine("2 - Livro de Receitas");
+            Console.WriteLine("3 - Salário");
 
             valorDigitado = Console.ReadLine();
 
@@ -41,6 +42,13 @@ namespace Exercicios_Iniciais
                             Console.WriteLine("Você cadastrou a receita {0}, com nota {1}.",
                                 receita.nomeReceita,receita.notaReceita.ToString());                         
                         break;
+                    case 3:
+                            Console.WriteLine("Digite seu salário atual: ");
+                            Salario salario = new Salario(Double.Parse(Console.ReadLine()));
+                            Console.WriteLine("Digite o percentual de aumento: ");
+                            salario.calculaNovoSalarioPorPercentual(double.Parse(Console.ReadLine()));
+                            Console.WriteLine("Seu novo salário será de: {0}",salario.salario.ToString());
+                            break;
                     default: Console.WriteLine("vamos almoçar");
                         break;
                 }
