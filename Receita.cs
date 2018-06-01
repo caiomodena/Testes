@@ -1,6 +1,6 @@
 using System;
 
-public class Receita
+class Receita
 {
     public string nomeReceita {get;}
     public int notaReceita { get; set; }

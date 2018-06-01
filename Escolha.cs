@@ -2,6 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 using System.Linq;
+using System.Globalization;
 
 namespace Exercicios_Iniciais
 {
@@ -14,6 +15,7 @@ namespace Exercicios_Iniciais
             Console.WriteLine("Escolha a funcionalidade desejada.");
             Console.WriteLine("1 - Calculadora");
             Console.WriteLine("2 - Livro de Receitas");
+            Console.WriteLine("3 - Salário");
 
             valorDigitado = Console.ReadLine();
 
@@ -32,6 +34,12 @@ namespace Exercicios_Iniciais
                             calc.mediaNumerosLista();
                             Console.WriteLine("A soma dos números resulta em: {0} e a média resulta em {1}.",
                                 calc.valorMedia,calc.valorSoma);
+
+                            Console.WriteLine("Digite dois números para serem somados, separados por espaço: ");
+                            string[] vetor = Console.ReadLine().Split(' ');
+                            int valorSoma;
+                            valorSoma = calc.somaNumeros(int.Parse(vetor[0]),int.Parse(vetor[1]));
+                            Console.WriteLine("A soma resultou em: {0}",valorSoma);
                         break;
                     case 2: 
                             Console.WriteLine("Digite nome da receita: ");
@@ -41,6 +49,13 @@ namespace Exercicios_Iniciais
                             Console.WriteLine("Você cadastrou a receita {0}, com nota {1}.",
                                 receita.nomeReceita,receita.notaReceita.ToString());                         
                         break;
+                    case 3:
+                            Console.WriteLine("Digite seu salário atual: ");
+                            Salario salario = new Salario(Double.Parse(Console.ReadLine()));
+                            Console.WriteLine("Digite o percentual de aumento: ");
+                            salario.calculaNovoSalarioPorPercentual(Double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture));
+                            Console.WriteLine("Seu novo salário será de: {0}",salario.salario);
+                            break;
                     default: Console.WriteLine("vamos almoçar");
                         break;
                 }
