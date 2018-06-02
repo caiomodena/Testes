@@ -16,6 +16,8 @@ namespace Exercicios_Iniciais
             Console.WriteLine("1 - Calculadora");
             Console.WriteLine("2 - Livro de Receitas");
             Console.WriteLine("3 - Salário");
+            Console.WriteLine("4 - Média de Idades");
+            Console.WriteLine("5 - Divisão de Pares");
 
             valorDigitado = Console.ReadLine();
 
@@ -33,7 +35,7 @@ namespace Exercicios_Iniciais
                             calc.somaNumerosLista();
                             calc.mediaNumerosLista();
                             Console.WriteLine("A soma dos números resulta em: {0} e a média resulta em {1}.",
-                                calc.valorMedia,calc.valorSoma);
+                                calc.valorSoma,calc.valorMedia);
 
                             Console.WriteLine("Digite dois números para serem somados, separados por espaço: ");
                             string[] vetor = Console.ReadLine().Split(' ');
@@ -55,6 +57,15 @@ namespace Exercicios_Iniciais
                             Console.WriteLine("Digite o percentual de aumento: ");
                             salario.calculaNovoSalarioPorPercentual(Double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture));
                             Console.WriteLine("Seu novo salário será de: {0}",salario.salario);
+                            break;
+                    case 4:
+                            MediaIdade mediaIdade = new MediaIdade();
+                            mediaIdade.LerIdades();
+                            mediaIdade.CalcularMedia();
+                            break;
+                    case 5:
+                            DivisaoPares divisaoPares = new DivisaoPares();
+                            divisaoPares.LerNumeros();                            
                             break;
                     default: Console.WriteLine("vamos almoçar");
                         break;
